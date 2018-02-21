@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon index.js",
-    "prod": "node index.js"
+    "prod": "NODE_ENV=production node index.js"
   },
   "dependencies": {
     "express": "^4.16.2",

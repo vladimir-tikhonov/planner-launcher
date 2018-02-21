@@ -26,4 +26,4 @@ app.get('/:plannerVersion', (request, response) => {
     response.send(renderHtmlForPlannerVersion(request.params.plannerVersion));
 });
 
-app.listen(3000);
+app.listen(80, 'roomplanner.light.wrenkitchens.com');

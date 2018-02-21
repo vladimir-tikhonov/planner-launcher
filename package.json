@@ -1,0 +1,22 @@
+{
+  "name": "planner-launcher",
+  "version": "0.1.0",
+  "description": "Lightweight planner-legacy replacement",
+  "main": "index.js",
+  "author": "Vladimir Tikhonov",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "prod": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "lodash.template": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.15.1"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Wren Planner - Showroom</title>
+	<link rel="stylesheet" type="text/css" href="http://planner.wrenliving.com/css/home.css?ck=746">
+</head>
+
+<body class="theme-a">
+	<div id="application">
+		<div id="splash-container" class="overlay">
+			<div id="splash" class="showroom kitchen">
+				<div class="messages">
+					<p class="mainLoading">Loading, please wait...</p>
+					<p id="loadErrors"></p>
+				</div>
+			</div>
+		</div>
+		<div id="navigation">
+			<a href="#" id="nav-bar-next" data-direction="1"></a>
+			<a href="#" id="nav-bar-back"></a>
+			<section id="slider">
+				<ul></ul>
+			</section>
+		</div>
+		<div id="application-content">
+			<div id="context-menu">
+				<section id="context-bar">
+					<img class="logo" data-logo="wren">
+				</section>
+			</div>
+			<div id="inspector-panel" class="hidden"></div>
+			<div id="application-views">
+				<div id="canvasLayer" class="planner-view canvas">
+					<div id="canvasOverlays"></div>
+				</div>
+				<div id="unityLayer" class="planner-view unity"></div>
+				<div id="htmlLayer" class="planner-view html"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var WREN = {
+
+			"hosts": {
+				"planner": "roomplanner.wrenkitchens.com",
+				"legacyPlanner": "planner.wrenkitchens.com",
+			},
+			"launch": {
+				"action": "default",
+				"debug": "",
+				"roomId": 1
+			},
+			"query": {},
+			"ckValue": "746",
+			"audience": "<%- plannerVersion %>",
+			"unityEnabled": "true",
+			"unityMode": "webgl",
+			"unityVRAvailable": "false",
+			"hostname": "46.101.103.246"
+		};
+	</script>
+	<script type="text/javascript" src="http://planner.wrenliving.com/js/commons.min.js?ck=746"></script>
+	<script type="text/javascript" src="http://planner.wrenliving.com/js/kitchen.min.js?ck=746"></script>
+	<script type="text/javascript" src="http://planner.wrenliving.com/js/home.min.js?ck=746"></script>
+	<script type="text/javascript" src="http://planner.wrenliving.com/js/debug.min.js?ck=746"></script>
+</body>
+
+</html>

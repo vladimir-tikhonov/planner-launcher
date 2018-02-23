@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Wren Planner - Showroom</title>
-	<link rel="stylesheet" type="text/css" href="http://planner.wrenliving.com/css/home.css?ck=746">
+	<title>Wren Planner - <%- plannerVersionTitle %></title>
+	<link rel="stylesheet" type="text/css" href="<%- assetsUrl %>/<%- plannerVersion %>-kitchen/main.css">
 </head>
 
 <body class="theme-a">
@@ -42,29 +42,19 @@
 	</div>
 	<script type="text/javascript">
 		var WREN = {
-
-			"hosts": {
-				"planner": "roomplanner.wrenkitchens.com",
-				"legacyPlanner": "planner.wrenkitchens.com",
-			},
 			"launch": {
 				"action": "default",
 				"debug": "",
 				"roomId": 1
 			},
-			"query": {},
-			"ckValue": "746",
+			"ckValue": "666",
 			"audience": "<%- plannerVersion %>",
 			"unityEnabled": "true",
-			"unityMode": "webgl",
-			"unityVRAvailable": "false",
-			"hostname": "46.101.103.246"
+			"unityMode": "webgl"
 		};
 	</script>
-	<script type="text/javascript" src="http://planner.wrenliving.com/js/commons.min.js?ck=746"></script>
-	<script type="text/javascript" src="http://planner.wrenliving.com/js/kitchen.min.js?ck=746"></script>
-	<script type="text/javascript" src="http://planner.wrenliving.com/js/home.min.js?ck=746"></script>
-	<script type="text/javascript" src="http://planner.wrenliving.com/js/debug.min.js?ck=746"></script>
+	<script type="text/javascript" src="<%- assetsUrl %>/vendors.js"></script>
+	<script type="text/javascript" src="<%- assetsUrl %>/<%- plannerVersion %>-kitchen/bundle.js"></script>
 </body>
 
 </html>

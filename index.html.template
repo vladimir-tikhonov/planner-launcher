@@ -4,13 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Wren Planner - <%- plannerVersionTitle %></title>
-	<link rel="stylesheet" type="text/css" href="<%- assetsUrl %>/<%- plannerVersion %>-kitchen/main.css">
+	<link rel="stylesheet" type="text/css" href="<%- assetsUrl %>/<%- plannerVersion %>-<%- roomTypeHandle %>/main.css">
 </head>
 
 <body class="theme-a">
 	<div id="application">
 		<div id="splash-container" class="overlay">
-			<div id="splash" class="showroom kitchen">
+			<div id="splash" class="<%- plannerVersion %> <%- roomTypeHandle %>">
 				<div class="messages">
 					<p class="mainLoading">Loading, please wait...</p>
 					<p id="loadErrors"></p>
@@ -42,11 +42,7 @@
 	</div>
 	<script type="text/javascript">
 		var WREN = {
-			"launch": {
-				"action": "default",
-				"debug": "",
-				"roomId": 1
-			},
+			"launch": <%= launchParams %>,
 			"ckValue": "666",
 			"audience": "<%- plannerVersion %>",
 			"unityEnabled": "true",
@@ -54,7 +50,7 @@
 		};
 	</script>
 	<script type="text/javascript" src="<%- assetsUrl %>/vendors.js"></script>
-	<script type="text/javascript" src="<%- assetsUrl %>/<%- plannerVersion %>-kitchen/bundle.js"></script>
+	<script type="text/javascript" src="<%- assetsUrl %>/<%- plannerVersion %>-<%- roomTypeHandle %>/bundle.js"></script>
 </body>
 
 </html>

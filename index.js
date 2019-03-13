@@ -10,6 +10,7 @@ const PlannerVersion = {
     Showroom: 'showroom',
     Trade: 'trade',
     Surveyor: 'surveyor',
+	Website: 'website',
 };
 const VALID_PLANNER_VERSIONS = new Set(values(PlannerVersion));
 
